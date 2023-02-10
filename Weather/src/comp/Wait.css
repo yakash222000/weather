@@ -1,0 +1,55 @@
+.wait
+{
+   
+    background-repeat: no-repeat;
+    background-clip: content-box;
+    background-position: center;
+    background-size: cover;
+    
+    /* color: white; */
+}
+.wait h1{
+    background-color: rgba(255, 255, 255, 0.342);
+    margin: auto;
+    color: black;
+    text-align: center;
+    width: 200px;
+    border-radius: 15px;
+    padding: 16px;
+}
+.changeable
+{
+    text-align: center;
+}
+div.cir
+{
+    width: 100px;
+    height: 100px;
+    /* border: 5px solid blue; */
+    border-radius: 10px;
+    animation: step-en;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    margin: 100px auto;
+}
+
+@keyframes step-en{
+
+    0%
+    {
+        transform: rotate(0deg);
+        background-color: blue;
+    }
+    50%
+    {
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+    100%
+    {
+        transform: rotate(360deg);
+        border-radius: 0px;
+        background-color: blueviolet;
+    }
+    
+}

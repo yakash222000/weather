@@ -1,0 +1,98 @@
+.searchBox
+{
+    width: 100vw;
+    margin:auto;
+    padding: 10px;
+    padding-right: 0px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #168aad;
+}
+.searchBox > .input
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    border-radius: 10px;
+    /* border: 1px solid grey; */
+    min-width: 250px;
+}
+.searchBox > .input > input
+{
+    height: 32px;
+    border-radius: 8px;
+    background-color: #168aad;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+}
+.searchBox > .input > input:focus
+{
+    background-color: white;
+    color: black;
+    font-weight: bold;
+}
+.titleOrigin
+{
+    width: 100%;
+    background-color: #003550;
+    color: white;
+    font-size: 30px;
+    /* font-weight: bold; */
+    padding: 8px 16px;
+}
+
+.weatherWindow
+{
+
+    margin: auto;
+    max-width: 1000px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.836);
+    border-radius:10px;
+}
+.bodyW
+{
+    width: 100vw;
+    background: linear-gradient(rgb(21, 120, 138), white);
+}
+.weatherIcon
+{
+    border-bottom:1px solid grey ;
+}
+.searchButton
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    display: none;
+}
+.searchButton:hover
+{
+    background-color: white;
+    color: #003550;
+}
+@media screen and (width < 500px)
+{
+    .searchBox
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .searchBox .input
+    {
+        max-width: 300px;
+        margin: auto;
+    }
+    .searchButton
+    {
+        display: block;
+        margin: auto;
+    }
+    
+}

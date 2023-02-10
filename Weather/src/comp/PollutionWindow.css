@@ -1,0 +1,28 @@
+.pollutionWindow
+{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.647);
+}
+.pollutionWindow > div
+{
+    justify-content: space-between;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+}
+
+
+
+
+.green
+{
+    background-color: green;
+    margin: 1px;
+}
+.red
+{
+    background-color: red;
+}
